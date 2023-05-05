@@ -519,10 +519,6 @@ video {
   display: flex;
 }
 
-.h-full{
-  height: 100%;
-}
-
 .min-h-screen{
   min-height: 100vh;
 }
@@ -533,10 +529,6 @@ video {
 
 .min-w-\[375px\]{
   min-width: 375px;
-}
-
-.max-w-\[1440px\]{
-  max-width: 1440px;
 }
 
 .max-w-\[375px\]{
@@ -702,6 +694,7 @@ video {
 
 .bg {
   background-image: url("/images/pattern-background-mobile.svg");
+  background-position: top;
   background-repeat: no-repeat;
 }
 
@@ -715,20 +708,8 @@ video {
   color: #3829e0cc;
 }
 
-.hover\:bg-\[\#3829e0e6\]:hover{
-  background-color: #3829e0e6;
-}
-
 .hover\:bg-\[\#3829e0cc\]:hover{
   background-color: #3829e0cc;
-}
-
-.hover\:text-\[\]:hover{
-  color: ;
-}
-
-.hover\:text-\[\#3829e0cc\]:hover{
-  color: #3829e0cc;
 }
 
 .hover\:text-\[\#1f2f56\]:hover{
@@ -736,20 +717,29 @@ video {
   color: rgb(31 47 86 / var(--tw-text-opacity));
 }
 
+.hover\:text-\[\#3829e0cc\]:hover{
+  color: #3829e0cc;
+}
+
 .hover\:no-underline:hover{
   text-decoration-line: none;
 }
 
 @media (min-width: 768px){
-  .md\:h-screen{
-    height: 100vh;
-  }
-
   .md\:max-w-\[480px\]{
     max-width: 480px;
   }
 
   .md\:p-8{
     padding: 2rem;
+  }
+
+  .md\:p-10{
+    padding: 2.5rem;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
