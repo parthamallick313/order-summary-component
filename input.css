@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg {
+    background-image: url("/images/pattern-background-mobile.svg");
+    @apply bg-no-repeat;
+  }
+
+  @media (min-width: 376px) {
+    .bg {
+      background-image: url("/images/pattern-background-desktop.svg");
+    }
+  }
+}
+
+.color {
+  color: #3829e0cc;
+}
